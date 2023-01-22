@@ -44,7 +44,7 @@ public class TestSerializer {
         Gson gson = new Gson();
         long start = new Date().getTime();
         for (int i = 0; i < 100000; i++){
-            List list = List.of(List.of("Hej", List.of("Med", "Erik"), "Dig"), List.of("Kirkepladsen", 10));
+            List list = List.of(List.of("Hej", List.of("Med", "Erik"), "Dig"), List.of("test", 10));
             //System.out.println(serializer.serialize(list));
             System.out.println(gson.toJsonTree(list));
         }
